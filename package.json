@@ -1,5 +1,5 @@
 {
-  "name": "@vuepress/monorepo",
+  "name": "@jxcsoft/jxcsoft",
   "version": "2.0.0-beta.51",
   "private": true,
   "type": "module",
@@ -39,6 +39,7 @@
     "@types/node": "^18.7.15",
     "@types/webpack-env": "^1.18.0",
     "@vitest/coverage-istanbul": "^0.23.1",
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.51",
     "bumpp": "^8.2.1",
     "conventional-changelog-cli": "^2.2.2",
     "cpx2": "^4.2.0",
@@ -73,5 +74,15 @@
         "webpack"
       ]
     }
+  },
+  "dependencies": {
+    "@vuepress/bundler-webpack": "^2.0.0-beta.51",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.51",
+    "@vuepress/plugin-search": "^2.0.0-beta.51",
+    "@vuepress/plugin-shiki": "^2.0.0-beta.51",
+    "mindmap-node": "^2.0.0",
+    "vuepress": "^2.0.0-beta.51",
+    "vuepress-plugin-mindmap": "^0.2.5"
   }
 }

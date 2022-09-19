@@ -3,90 +3,53 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 import { defineUserConfig } from '@vuepress/cli'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { defaultTheme } from '@vuepress/theme-default'
 import { getDirname, path } from '@vuepress/utils'
-import {
-  head,
-  navbarEn,
-  navbarZh,
-  sidebarEn,
-  sidebarZh,
-} from './configs/index.js'
+import { head, navbar, sidebar } from './configs/index.js'
 
 const __dirname = getDirname(import.meta.url)
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineUserConfig({
-  // set site base to default value
+  // 默认站点目录
   base: '/',
-
-  // extra tags in `<head>`
+  // 其他head标签
   head,
-
-  // site-level locales config
+  // 多语言站点配置
   locales: {
     '/': {
-      lang: 'en-US',
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator',
-    },
-    '/zh/': {
       lang: 'zh-CN',
-      title: 'VuePress',
-      description: 'Vue 驱动的静态网站生成器',
+      title: '进销存文档',
+      description: '进销存财务软件帮助文档',
     },
   },
-
-  // specify bundler via environment variable
+  // 绑定环境变量
   bundler:
     process.env.DOCS_BUNDLER === 'webpack' ? webpackBundler() : viteBundler(),
-
-  // configure default theme
+  // 默认主体配置
   theme: defaultTheme({
     logo: '/images/hero.png',
-    repo: 'vuepress/vuepress-next',
-    docsDir: 'docs',
-
-    // theme-level locales config
+    // repo如果不注释，就会有GitHub的菜单。
+    // repo: 'jxcsoft/doc',
+    // docsDir: 'docs',
+    // 多语言主题配置
     locales: {
-      /**
-       * English locale config
-       *
-       * As the default locale of @vuepress/theme-default is English,
-       * we don't need to set all of the locale fields
-       */
       '/': {
-        // navbar
-        navbar: navbarEn,
-        // sidebar
-        sidebar: sidebarEn,
-        // page meta
-        editLinkText: 'Edit this page on GitHub',
-      },
-
-      /**
-       * Chinese locale config
-       */
-      '/zh/': {
-        // navbar
-        navbar: navbarZh,
-        selectLanguageName: '简体中文',
-        selectLanguageText: '选择语言',
-        selectLanguageAriaLabel: '选择语言',
-        // sidebar
-        sidebar: sidebarZh,
-        // page meta
-        editLinkText: '在 GitHub 上编辑此页',
-        lastUpdatedText: '上次更新',
-        contributorsText: '贡献者',
+        // 顶部菜单
+        navbar,
+        // 侧边菜单
+        sidebar,
+        // 原始页面信息
+        // editLinkText: '需要人工服务',
+        // lastUpdatedText: '上次更新',
+        // contributorsText: '贡献者',
         // custom containers
         tip: '提示',
         warning: '注意',
         danger: '警告',
-        // 404 page
+        // 404 页面
         notFound: [
           '这里什么都没有',
           '我们怎么到这来了？',
@@ -100,34 +63,31 @@ export default defineUserConfig({
         toggleSidebar: '切换侧边栏',
       },
     },
-
     themePlugins: {
-      // only enable git plugin in production mode
+      // 仅在生产模式下启用git插件
       git: isProd,
-      // use shiki plugin in production mode instead
+      // 只在生产模式下使用shiki插件
       prismjs: !isProd,
     },
   }),
-
-  // configure markdown
+  // markdown相关配置
   markdown: {
     importCode: {
       handleImportPath: (str) =>
         str.replace(/^@vuepress/, path.resolve(__dirname, '../../ecosystem')),
     },
   },
-
-  // use plugins
+  // 使用插件
   plugins: [
     docsearchPlugin({
-      appId: '34YFD9IUQ2',
-      apiKey: '9a9058b8655746634e01071411c366b8',
-      indexName: 'vuepress',
+      appId: 'D9GNH2Y4M8',
+      apiKey: 'd38dc692339654e1bda3975f38247629',
+      indexName: 'jxcsoft',
       searchParameters: {
-        facetFilters: ['tags:v2'],
+        facetFilters: ['tags:v3'],
       },
       locales: {
-        '/zh/': {
+        '/': {
           placeholder: '搜索文档',
           translations: {
             button: {
@@ -160,7 +120,7 @@ export default defineUserConfig({
                 searchByText: '搜索提供者',
               },
               noResultsScreen: {
-                noResultsText: '无法找到相关结果',
+                noResultsText: '索引接入中,我们还在等待索引服务方的支持,谢谢!',
                 suggestedQueryText: '你可以尝试查询',
                 reportMissingResultsText: '你认为该查询应该有结果？',
                 reportMissingResultsLinkText: '点击反馈',
@@ -170,14 +130,11 @@ export default defineUserConfig({
         },
       },
     }),
-    googleAnalyticsPlugin({
-      // we have multiple deployments, which would use different id
-      id: process.env.DOCS_GA_ID ?? '',
-    }),
+    // 插件注册
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
     }),
-    // only enable shiki plugin in production mode
+    // 只在生产模式下使用shiki插件
     isProd ? shikiPlugin({ theme: 'dark-plus' }) : [],
   ],
 })

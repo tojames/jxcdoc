@@ -1,11 +1,11 @@
 {
-  "name": "VuePress",
-  "short_name": "VuePress",
-  "description": "Vue-powered Static Site Generator",
+  "name": "进销存文档",
+  "short_name": "进销存文档",
+  "description": "进销存财务软件帮助文档",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#fff",
-  "theme_color": "#3eaf7c",
+  "theme_color": "#ff770f",
   "icons": [
     {
       "src": "/images/icons/android-chrome-192x192.png",

@@ -8,13 +8,13 @@
     "plugin",
     "git"
   ],
-  "homepage": "https://github.com/vuepress",
+  "homepage": "https://github.com/jxcsoft",
   "bugs": {
-    "url": "https://github.com/vuepress/vuepress-next/issues"
+    "url": "https://github.com/jxcsoft/jxcsoft/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuepress/vuepress-next.git"
+    "url": "git+https://github.com/jxcsoft/jxcsoft.git"
   },
   "license": "MIT",
   "author": "meteorlxy",
