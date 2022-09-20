@@ -32,7 +32,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 <CodeGroup>
   <CodeGroupItem title="不管库存" active>
 
-```bash:no-line-numbers
+``` ts:no-line-numbers
 # 启用负库存出库
 启用负库存出库之后，别说不用入库，连资料都可以不建，快速上手
 
@@ -50,7 +50,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 
   <CodeGroupItem title="要管库存">
 
-```ts:no-line-numbers
+``` ts:no-line-numbers
 # 导入基本信息
 软件提供基本信息导入模板，无需单个录入
 
@@ -68,7 +68,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 
   <CodeGroupItem title="产销一体">
 
-```ts:no-line-numbers
+``` ts:no-line-numbers
 # 订单
 按销售订单、做生产计划
 
@@ -86,7 +86,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 
   <CodeGroupItem title="线上线下">
 
-```ts:no-line-numbers
+``` ts:no-line-numbers
 # 完善ERP系统
 软件提供基本信息导入模板，无需单个录入
 
