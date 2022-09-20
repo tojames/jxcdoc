@@ -113,3 +113,16 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 console.log('Hello，进销存文档！')
 ```
 :::
+
+### 开源代码如何推送
+
+```bash
+# 准备所有文件
+git add --all
+
+# 提交并标注
+git commit -m "update xxx"
+
+# 推送到主分支
+git push -u -origin main
+```
