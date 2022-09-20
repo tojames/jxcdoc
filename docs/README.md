@@ -44,7 +44,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 
   <CodeGroupItem title="要管库存">
 
-```bash:no-line-numbers
+```ts:no-line-numbers
 # 导入基本信息
 软件提供基本信息导入模板，无需单个录入
 
@@ -62,7 +62,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 
   <CodeGroupItem title="产销一体">
 
-```bash:no-line-numbers
+```ts:no-line-numbers
 # 订单
 按销售订单、做生产计划
 
@@ -80,17 +80,17 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 
   <CodeGroupItem title="线上线下">
 
-```bash:no-line-numbers
-# 导入基本信息
+```ts:no-line-numbers
+# 完善ERP系统
 软件提供基本信息导入模板，无需单个录入
 
-# 导入期初数据
+# 同步平台数据
 不管是往来账、期初库存均可一键导入
 
-# 启用系统
+# 客户线上下单、在线支付、月结对账
 入库开单、出库开单，库存随单据的保存过账而动态变化
 
-# 报表分析
+# 拣货验货系统、配送系统支持
 单据自动生成相关报表，让您经营得心应手
 ```
 
