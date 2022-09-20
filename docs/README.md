@@ -18,6 +18,12 @@ features:
     details: 不受束缚的查看体验，可在PC上观看学习，又可使用移动设备来灵活查看文档。
   - title: 沉浸式
     details: 进销存文档 会很全面、更直观的展示您想要学习的内容，让您沉浸于中。
+  - title: 帮老板
+    details: 技术人员没遇到新问题就录入帮助文档，既增沉淀了公司事务，又增加了搜索权重
+  - title: 帮业务
+    details: 业务员可以更直观的将系统全面展示给客户，无需问他问她。
+  - title: 帮客户
+    details: 有效的帮助客户才是核心，有了懒加载，页面响应一触即发，无需等待。  
 footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 ---
 
@@ -99,7 +105,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 
 </CodeGroup>
 
-# 语法示例
+### 语法示例
 
 
 ::: details 点击查看代码
