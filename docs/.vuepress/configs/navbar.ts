@@ -39,16 +39,20 @@ export const navbar: NavbarConfig = [
         text: 'JDP平台',
         link: '/dev/jdp/',
         children: [
-          '/dev/jdp/module.md',
-          '/dev/jdp/table.md',
-          '/dev/jdp/report.md',
-          '/dev/jdp/enumeration.md',
-          '/dev/jdp/mapping.md',
+          '/dev/jdp/系统模块管理.md',
+          '/dev/jdp/表结构管理.md',
+          '/dev/jdp/报表设置.md',
+          '/dev/jdp/枚举管理.md',
+          '/dev/jdp/字段映射关系.md',
         ],
       },
       {
         text: '数据库',
-        children: ['/dev/jdp/procedure.md', '/dev/jdp/view.md'],
+        children: [
+          '/dev/jdp/存储过程.md',
+          '/dev/jdp/视图.md',
+          '/dev/jdp/标量值函数.md',
+        ],
       },
       {
         text: 'config',

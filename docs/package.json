@@ -14,7 +14,7 @@
     "@vuepress/cli": "workspace:*",
     "@vuepress/client": "workspace:*",
     "@vuepress/core": "workspace:*",
-    "@vuepress/plugin-docsearch": "workspace:*",
+    "@vuepress/plugin-search": "workspace:*",
     "@vuepress/plugin-register-components": "workspace:*",
     "@vuepress/plugin-shiki": "workspace:*",
     "@vuepress/theme-default": "workspace:*",

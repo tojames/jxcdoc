@@ -110,6 +110,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 
 ::: details 点击查看代码
 ```ts
+...这句代码很牛逼
 console.log('Hello，进销存文档！')
 ```
 :::

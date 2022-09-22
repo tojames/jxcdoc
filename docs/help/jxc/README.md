@@ -1,7 +1,6 @@
 ---
 title: 尽消存帮助文档
 description: 进销存财务软件，营销管理平台帮助文档
-keywords: 尽消存,进销存软件,财务软件,开单系统
 ---
 ![alt](/images/jxc/尽消存.svg)
 
