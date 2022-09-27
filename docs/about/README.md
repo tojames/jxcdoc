@@ -1,6 +1,4 @@
 ---
-lang: zh-CN
-title: 关于
 description: 进销存财务软件，营销管理平台帮助文档
 ---
 # 进销存文档

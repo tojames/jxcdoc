@@ -17,6 +17,7 @@ export const navbar: NavbarConfig = [
           '/help/jxc/stock/',
           '/help/jxc/financial/',
           '/help/jxc/system/',
+          '/help/jxc/print/',
         ],
       },
       {

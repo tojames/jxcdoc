@@ -12,9 +12,9 @@ actions:
     link: /about/
     type: secondary
 features:
-  - title: 很简单
+  - title: 超简单
     details: 以 Markdown 为中心的文档结构，采用 vue 渐进式呈现帮助图文。
-  - title: 更方便
+  - title: 极方便
     details: 不受束缚的查看体验，可在PC上观看学习，又可使用移动设备来灵活查看文档。
   - title: 沉浸式
     details: 进销存文档 会很全面、更直观的展示您想要学习的内容，让您沉浸于中。
@@ -23,8 +23,9 @@ features:
   - title: 帮业务
     details: 业务员可以更直观的将系统全面展示给客户，无需问他问她。
   - title: 帮客户
-    details: 有效的帮助客户才是核心，有了懒加载，页面响应一触即发，无需等待。  
-footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
+    details: 有效的帮助客户才是核心，懒加载，页面响应一触即发，无需等待。
+footerHtml: true
+footer: <p> MIT Licensed | Copyright © 2016-2022 Powered by <a href="http://www.jxcsoft.cn"target="_red">jxcsoft.cn</a></p>
 ---
 
 ### 像数 1, 2, 3 一样容易
@@ -32,7 +33,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 <CodeGroup>
   <CodeGroupItem title="不管库存" active>
 
-``` ts:no-line-numbers
+``` sh:no-line-numbers
 # 启用负库存出库
 启用负库存出库之后，别说不用入库，连资料都可以不建，快速上手
 
@@ -46,11 +47,11 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 现结客户有历史单据明细可以查，月结客户直接按模板导出对账单找客户收钱
 ```
 
-  </CodeGroupItem>
+</CodeGroupItem>
 
-  <CodeGroupItem title="要管库存">
+<CodeGroupItem title="要管库存">
 
-``` ts:no-line-numbers
+``` sh:no-line-numbers
 # 导入基本信息
 软件提供基本信息导入模板，无需单个录入
 
@@ -64,11 +65,11 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 单据自动生成相关报表，让您经营得心应手
 ```
 
-  </CodeGroupItem>
+</CodeGroupItem>
 
-  <CodeGroupItem title="产销一体">
+<CodeGroupItem title="产销一体">
 
-``` ts:no-line-numbers
+``` sh:no-line-numbers
 # 订单
 按销售订单、做生产计划
 
@@ -82,11 +83,11 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 进销存专业财务+生产管理一体化，将所有数据关联有效控制成本
 ```
 
-  </CodeGroupItem>
+</CodeGroupItem>
 
-  <CodeGroupItem title="线上线下">
+<CodeGroupItem title="线上线下">
 
-``` ts:no-line-numbers
+``` sh:no-line-numbers
 # 完善ERP系统
 软件提供基本信息导入模板，无需单个录入
 
@@ -96,7 +97,7 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
 # 客户线上下单、在线支付、月结对账
 入库开单、出库开单，库存随单据的保存过账而动态变化
 
-# 拣货验货系统、配送系统支持
+# WMS拣货、验货、TMS配送系统支持
 单据自动生成相关报表，让您经营得心应手
 ```
 
@@ -104,26 +105,3 @@ footer: MIT Licensed | Copyright © 2016-2022 Powered By jxcsoft.cn
     
 
 </CodeGroup>
-
-### 语法示例
-
-
-::: details 点击查看代码
-```ts
-...这句代码很牛逼
-console.log('Hello，进销存文档！')
-```
-:::
-
-### 开源代码如何推送
-
-```bash
-# 准备所有文件
-git add --all
-
-# 提交并标注
-git commit -m "update xxx"
-
-# 推送到主分支
-git push -u -origin main
-```

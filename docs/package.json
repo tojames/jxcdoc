@@ -1,6 +1,6 @@
 {
   "name": "jxcsoft",
-  "private": "false",
+  "private": true,
   "type": "module",
   "scripts": {
     "docs:build": "vuepress-cli build --clean-cache",

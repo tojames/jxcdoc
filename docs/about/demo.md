@@ -227,12 +227,26 @@ const bar = 'bar'
 :::
 ::::
 
-# 字体颜色及大小
 
-输入
+### 语法示例
 
+
+::: details 点击查看代码
+```ts
+...这句代码很牛逼
+console.log('Hello，进销存文档！')
 ```
-<font color="#ff770f" size="5">帮助文档</font><Badge text="尽消存"/>
-```
+:::
 
-输出
+### 开源代码如何推送
+
+```bash
+# 准备所有文件
+git add --all
+
+# 提交并标注
+git commit -m "update xxx"
+
+# 推送到主分支
+git push -u -origin main
+```

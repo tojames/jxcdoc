@@ -17,7 +17,6 @@ export const sidebar: SidebarConfig = {
         '/dev/jdp/报表设置.md',
         '/dev/jdp/枚举管理.md',
         '/dev/jdp/字段映射关系.md',
-        '/dev/jdp/标量值函数.md',
       ],
     },
     {
@@ -28,7 +27,11 @@ export const sidebar: SidebarConfig = {
     {
       text: '数据库',
       link: '/dev/jdp/README.md',
-      children: ['/dev/jdp/存储过程.md', '/dev/jdp/视图.md'],
+      children: [
+        '/dev/jdp/存储过程.md',
+        '/dev/jdp/视图.md',
+        '/dev/jdp/标量值函数.md',
+      ],
     },
     {
       text: '常见问题',
@@ -139,6 +142,10 @@ export const sidebar: SidebarConfig = {
         '/help/jxc/qa/systemqa.md',
         '/help/jxc/qa/printqa.md',
       ],
+    },
+    {
+      text: '打印样式设计',
+      link: '/help/jxc/print/',
     },
     {
       text: '尽消存开发文档',
