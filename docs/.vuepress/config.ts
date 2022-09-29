@@ -49,6 +49,7 @@ export default defineUserConfig({
         tip: '提示',
         warning: '注意',
         danger: '警告',
+        remark: ' ',
         // 404 页面
         notFound: [
           '这里什么都没有',

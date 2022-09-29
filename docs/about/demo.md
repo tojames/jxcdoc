@@ -250,3 +250,39 @@ git commit -m "update xxx"
 # 推送到主分支
 git push -u -origin main
 ```
+### 修改容器样式
+路径`\theme-default\lib\client\styles\custom-container.scss`
+```scss
+  &.tip,
+  &.warning,
+  &.danger {
+    padding: 0.1rem 1.5rem;
+    margin: 1rem 0;
+    border-top: solid 1px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    border-radius: 0.5rem;
+  }
+  ```
+:::: code-group
+::: code-group-item 橙色
+::: tip
+就是边上有框，这里是橙色的框。
+:::
+:::
+::: code-group-item 黄色
+::: warning
+就是边上有框，这里是黄色的框。
+:::
+:::
+::: code-group-item 红色
+::: danger
+就是边上有框，这里是红色的框。
+:::
+:::
+::::
+
+::: remark 就是马克
+比如这个是标注，标注啥就是啥，左侧是橙色2px的边框，右下角是圆角，底色是tip，就是不知道超宽了问题大不大。
+:::
