@@ -152,11 +152,21 @@ export const sidebar: SidebarConfig = {
       link: '/dev/jdp/',
     },
   ],
+  '/help/gjp/': [
+    {
+      text: '管家婆',
+      children: ['/help/gjp/hh/', '/help/gjp/gmt/'],
+    },
+  ],
   '/help/gjp/hh/': [
     {
+      text: '管家婆帮助文档',
+      link: '/help/gjp/',
+    },
+    {
       text: '辉煌系列',
+      link: '/help/gjp/hh/',
       children: [
-        '/help/gjp/hh/欢迎.md',
         '/help/gjp/hh/系统安装与日常维护.md',
         '/help/gjp/hh/系统维护与权限设置.md',
         '/help/gjp/hh/基本信息和期初建账.md',
@@ -188,6 +198,10 @@ export const sidebar: SidebarConfig = {
     },
   ],
   '/help/gjp/gmt/': [
+    {
+      text: '管家婆帮助文档',
+      link: '/help/gjp/',
+    },
     {
       text: '工贸T系列',
       link: '/help/gjp/gmt/',

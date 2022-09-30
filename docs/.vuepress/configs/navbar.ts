@@ -21,9 +21,9 @@ export const navbar: NavbarConfig = [
       },
       {
         text: '管家婆',
-        link: '/help/gjp/hh/pjb/',
+        link: '/help/gjp/',
         children: [
-          { text: '辉煌系列', link: '/help/gjp/hh/欢迎.md' },
+          { text: '辉煌系列', link: '/help/gjp/hh/' },
           { text: '工贸T系列', link: '/help/gjp/gmt/' },
         ],
       },
