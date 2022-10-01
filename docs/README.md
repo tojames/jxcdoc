@@ -29,7 +29,6 @@ footer: <p> MIT Licensed | Copyright © 2016-2022 Powered by <a href="http://www
 ---
 
 ### 像数 1, 2, 3 一样容易
-
 <CodeGroup>
   <CodeGroupItem title="不管库存" active>
 

@@ -46,9 +46,9 @@ export default defineUserConfig({
         // lastUpdatedText: '上次更新',
         // contributorsText: '贡献者',
         // custom containers
-        tip: '提示',
-        warning: '注意',
-        danger: '警告',
+        tip: ' ',
+        warning: ' ',
+        danger: ' ',
         remark: ' ',
         // 404 页面
         notFound: [
