@@ -9,7 +9,7 @@ actions:
     link: http://www.jxcsq.com
     type: primary
   - text: 自助文档
-    link: /about/
+    link: /a/
     type: secondary
 features:
   - title: 超简单

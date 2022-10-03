@@ -3,28 +3,28 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 export const navbar: NavbarConfig = [
   {
     text: '关于',
-    link: '/about/',
+    link: '/a/',
   },
   {
     text: '帮助文档',
     children: [
       {
         text: '尽消存',
-        link: '/help/jxc/',
+        link: '/h/j/',
         children: [
-          { text: '购货管理', link: '/help/jxc/buy/ghxj.md' },
-          { text: '销货管理', link: '/help/jxc/sale/xhbj.md' },
-          { text: '仓库管理', link: '/help/jxc/stock/cbtz.md' },
-          { text: '财务管理', link: '/help/jxc/financial/skd.md' },
-          { text: '系统设置', link: '/help/jxc/system/jczl.md' },
+          { text: '购货管理', link: '/h/j/a/a.md' },
+          { text: '销货管理', link: '/h/j/b/a.md' },
+          { text: '仓库管理', link: '/h/j/c/a.md' },
+          { text: '财务管理', link: '/h/j/d/a.md' },
+          { text: '系统设置', link: '/h/j/e/a.md' },
         ],
       },
       {
         text: '管家婆',
-        link: '/help/gjp/',
+        link: '/h/g/',
         children: [
-          { text: '辉煌系列', link: '/help/gjp/hh/' },
-          { text: '工贸T系列', link: '/help/gjp/gmt/' },
+          { text: '辉煌系列', link: '/h/g/h/' },
+          { text: '工贸T系列', link: '/h/g/t/' },
         ],
       },
     ],
@@ -34,33 +34,35 @@ export const navbar: NavbarConfig = [
     children: [
       {
         text: 'JDP平台',
-        link: '/dev/jdp/',
+        link: '/d/j/',
         children: [
-          '/dev/jdp/xtmk.md',
-          '/dev/jdp/bjg.md',
-          '/dev/jdp/bbsz.md',
-          '/dev/jdp/mjgl.md',
-          '/dev/jdp/zdys.md',
-        ],
-      },
-      {
-        text: '数据库',
-        children: [
-          '/dev/jdp/ccgc.md',
-          '/dev/jdp/st.md',
-          '/dev/jdp/blz.md',
-          '/dev/jdp/sjk.md',
+          '/d/j/a.md',
+          '/d/j/b.md',
+          '/d/j/c.md',
+          '/d/j/d.md',
+          '/d/j/e.md',
         ],
       },
       {
         text: 'config',
-        children: ['/dev/jdp/popup.md', '/dev/jdp/define.md'],
+        link: '/d/j/1.md',
+        children: ['/d/j/f.md', '/d/j/g.md'],
+      },
+      {
+        text: '数据库',
+        link: '/d/j/2.md',
+        children: ['/d/j/h.md', '/d/j/i.md', '/d/j/j.md', '/d/j/k.md'],
       },
       {
         text: '常见问题',
-        link: '/dev/jdp/q.md',
+        link: '/d/j/z/',
+        children: [],
       },
     ],
+  },
+  {
+    text: '文档目录',
+    link: '/list.md/',
   },
   {
     text: '主站',

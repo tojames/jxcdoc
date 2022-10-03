@@ -4,6 +4,7 @@ import { webpackBundler } from '@vuepress/bundler-webpack'
 import { defineUserConfig } from '@vuepress/cli'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { defaultTheme } from '@vuepress/theme-default'
 import { getDirname, path } from '@vuepress/utils'
@@ -13,11 +14,8 @@ const __dirname = getDirname(import.meta.url)
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineUserConfig({
-  // 默认站点目录
   base: '/',
-  // 其他head标签
   head,
-  // 多语言站点配置
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -25,27 +23,15 @@ export default defineUserConfig({
       description: '进销存财务软件帮助文档',
     },
   },
-  // 绑定环境变量
   bundler:
     process.env.DOCS_BUNDLER === 'webpack' ? webpackBundler() : viteBundler(),
-  // 默认主体配置
+  // 默认主题配置
   theme: defaultTheme({
     logo: '/images/hero.png',
-    // repo如果不注释，就会有GitHub的菜单。
-    repo: 'jxcsoft/jxcsoft',
-    docsDir: 'docs',
-    // 多语言主题配置
     locales: {
       '/': {
-        // 顶部菜单
         navbar,
-        // 侧边菜单
         sidebar,
-        // 原始页面信息
-        // editLinkText: '需要人工服务',
-        // lastUpdatedText: '上次更新',
-        // contributorsText: '贡献者',
-        // custom containers
         tip: ' ',
         warning: ' ',
         danger: ' ',
@@ -65,21 +51,26 @@ export default defineUserConfig({
       },
     },
     themePlugins: {
-      // 仅在生产模式下启用git插件
       git: isProd,
-      // 只在生产模式下使用shiki插件
       prismjs: !isProd,
     },
   }),
-  // markdown相关配置
   markdown: {
     importCode: {
       handleImportPath: (str) =>
         str.replace(/^@vuepress/, path.resolve(__dirname, '../../ecosystem')),
     },
   },
-  // 使用插件
   plugins: [
+    // searchPlugin({
+    //   locales: {
+    //     '/': {
+    //       placeholder: '搜索',
+    //     },
+    //   },
+    //   // 设置搜索结果最大显示内容
+    //   maxSuggestions: 20,
+    // }),
     docsearchPlugin({
       appId: 'D9GNH2Y4M8',
       apiKey: 'd38dc692339654e1bda3975f38247629',
@@ -131,11 +122,9 @@ export default defineUserConfig({
         },
       },
     }),
-    // 插件注册
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
     }),
-    // 只在生产模式下使用shiki插件
     isProd ? shikiPlugin({ theme: 'dark-plus' }) : [],
   ],
 })
