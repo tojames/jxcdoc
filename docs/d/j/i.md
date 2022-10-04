@@ -1,3 +1,4 @@
+![](/images/jxc/v.svg)
 # 视图 <Badge text="JDP"> </Badge>
 视图是可视化的表。
 

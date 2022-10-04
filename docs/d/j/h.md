@@ -1,3 +1,4 @@
+![](/images/jxc/pr.svg)
 # 存储过程 <Badge text="JDP"> </Badge>
 　存储过程(Stored Procedure)，是一组为了完成特定功能的SQL 语句，类似一门程序设计语言，也包括了数据类型、流程控制、输入和输出和它自己的函数库。存储过程可以说是一个记录集，它是由一些T-SQL语句组成的代码块，这些T-SQL语句代码像一个方法一样实现一些功能（对单表或多表的增删改查），然后再给这个代码块取一个名字，在用到这个功能的时候调用他就行了。
 
@@ -28,12 +29,14 @@ AS sql_statement [ ...n ]
 ```
 ### 调用存储过程
 ``` sql
-EXECUTE Procedure_name '' --存储过程如果有参数，后面加参数格式为：@参数名=value，也可直接为参数值value
+EXECUTE Procedure_name ''
 ```
+--存储过程如果有参数，后面加参数格式为：@参数名=value，也可直接为参数值value
 ### 删除存储过程
 ``` sql
-drop procedure procedure_name    --在存储过程中能调用另外一个存储过程，而不能删除另外一个存储过程
+drop procedure procedure_name   
 ```
+--在存储过程中能调用另外一个存储过程，而不能删除另外一个存储过程
 #### 创建存储过程的参数
 - procedure_name：存储过程的名称，在前面加#为局部临时存储过程，加##为全局临时存储过程。
 - number：是可选的整数，用来对同名的过程分组，以便用一条 DROP PROCEDURE 语句即可将同组的过程一起除去。例如，名为 orders 的应用程序使用的过程可以命名为 orderproc;1、orderproc;2 等。DROP PROCEDURE - orderproc 语句将除去整个组。如果名称中包含定界标识符，则数字不应包含在标识符中，只应在 procedure_name 前后使用适当的定界符。 

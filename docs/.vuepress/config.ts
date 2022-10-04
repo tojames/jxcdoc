@@ -4,7 +4,6 @@ import { webpackBundler } from '@vuepress/bundler-webpack'
 import { defineUserConfig } from '@vuepress/cli'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { defaultTheme } from '@vuepress/theme-default'
 import { getDirname, path } from '@vuepress/utils'
@@ -72,8 +71,11 @@ export default defineUserConfig({
     //   maxSuggestions: 20,
     // }),
     docsearchPlugin({
-      appId: 'D9GNH2Y4M8',
-      apiKey: 'd38dc692339654e1bda3975f38247629',
+      //  appId: 'D9GNH2Y4M8',
+      //  apiKey: 'd38dc692339654e1bda3975f38247629',
+      //  indexName: 'jxcsoft',
+      appId: 'YBN2SH1PCZ',
+      apiKey: '8b07c87f848b0a877f8074ea87d9d6bc',
       indexName: 'jxcsoft',
       searchParameters: {
         facetFilters: ['tags:v2'],

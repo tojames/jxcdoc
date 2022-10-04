@@ -293,3 +293,24 @@ git push -u -origin main
 ``` toml
 代码块测试
 ```
+
+## 关于sidebar
+同级`sidebar`这样设计能展开子标签
+- `sidebar.ts`代码
+``` ts
+  '/a/': [
+    {
+      text: '关于我们',
+      link: '/a/',
+    },
+    {
+      text: '写作示例',
+      link: '/a/d/',
+    },
+  ],
+```
+- 文件夹目录
+```:no-line-numbers
+└─ a
+   └─ d
+```

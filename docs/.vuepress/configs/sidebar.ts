@@ -4,7 +4,11 @@ export const sidebar: SidebarConfig = {
   '/a/': [
     {
       text: '关于',
-      children: ['/a/README.md', '/a/demo.md/'],
+      link: '/a/',
+    },
+    {
+      text: '写作示例',
+      link: '/a/d/',
     },
   ],
   '/d/': [
